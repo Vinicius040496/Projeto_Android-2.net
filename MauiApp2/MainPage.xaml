@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Conversor De Moedas / Real Brasileiro"
+                Style="{StaticResource Headline}"/>
+
+            <Label Text="Valor Dolar"/>
+            <Entry x:Name="Dolar" Placeholder="R$"/>
+
+
+            <Label Text="Valor Euro"/>
+            <Entry x:Name="Euro" Placeholder="R$"/>
+
+
+            <Label Text="Valor Libra"/>
+            <Entry x:Name="Libra" Placeholder="R$"/>
+
+
+            <Label Text="Valor Peso Argentino"/>
+            <Entry x:Name="Peso" Placeholder="R$"/>
+            <Button Text="Converter"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
